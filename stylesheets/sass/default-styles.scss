@@ -67,8 +67,8 @@ body {
 
     #question {
         font-size: 1.5rem;
-        margin-top: 3.5rem;
-        padding: 0.8rem;
+        // margin-top: 3.5rem;
+        padding: 0.2rem;
         background-color: rgba(197, 239, 247, 0.8);
         border-radius: 10px 10px
     }
@@ -139,6 +139,7 @@ body {
     border-radius: 3px;
     bottom: 0;
     position: absolute;
+    display: block;
     font-size: 2.5rem;
 
     .fa {

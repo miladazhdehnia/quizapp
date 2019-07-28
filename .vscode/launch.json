@@ -17,7 +17,7 @@
                   "request": "attach",
                   "port": 9222,
                   "name": "Attach Chrome",
-                  "url": "http://localhost:8080/dist/index",
+                  "url": "http://localhost:8080/dist/index.template.html",
                   "webRoot": "${workspaceFolder}"
                 }
               
