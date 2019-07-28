@@ -1,0 +1,37 @@
+//need bootstrap for best result
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+    @each $property in $properties {
+      #{$property}: $min-value;
+    }
+  
+    @media (min-width: $min-vw) {
+      @each $property in $properties {
+        #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+      }
+    }
+  
+    @media (min-width: $max-vw) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+  }
+  
+  @function strip-unit($number) {
+    @if type-of($number) == "number" and not unitless($number) {
+      @return $number / ($number * 0 + 1);
+    }
+  
+    @return $number;
+  }
+  
+   /* Single property */
+//add it to _resets.scss
+//   html {
+//     @include fluid-type(font-size, 320px, 1366px, 14px, 18px);
+//   }
+  
+//   /* Multiple properties with same values */
+// //   h1 {
+// //     @include fluid-type(padding-bottom padding-top, 20em, 70em, 2em, 4em);
+// //   }

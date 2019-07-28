@@ -1,0 +1,24 @@
+@import "_mixins.scss";
+
+@include font-face(Shabnam, fonts/shabnam/Shabnam);
+@include font-face(Vazir, fonts/vazir/Vazir);
+body,html{
+    @include fluid-type(font-size, 320px, 1366px, 14px, 18px);
+    a{
+        color: inherit;
+        &:hover{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    scroll-behavior: smooth;
+    font: {
+        family: shabnam;
+    }
+        direction:rtl;
+        text-align:rtl;
+        height:100%;
+}
+body{
+    overflow: hidden;
+}

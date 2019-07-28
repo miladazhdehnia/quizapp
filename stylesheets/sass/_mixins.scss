@@ -1,0 +1,12 @@
+@import "../sass/mixins/_fontface.scss";
+@import "../sass/mixins/_breakpoints.scss/";
+@import "../sass/mixins/typography.scss";
+//transition
+@mixin  transition($property) {
+    transition: $property;
+    -moz-transition: $property; /* Firefox 4 */
+    -webkit-transition: $property; /* Safari and Chrome */
+    -o-transition: $property; /* Opera */
+    -ms-transition: $property; /* Explorer 10 */
+    
+}

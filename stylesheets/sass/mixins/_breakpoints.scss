@@ -1,0 +1,12 @@
+//screen sizes
+$xs : 576px;  //phones
+$md : 768px;  //tablets
+$lg : 992px;  //desktops
+$xl : 1200px; //large desktops
+
+@mixin media-breakpoint-min($screenSize) {
+  @media screen and (min-width: $screenSize){@content}
+};
+@mixin media-breakpoint-max($screenSize) {
+  @media screen and (max-width: $screenSize){@content}
+};

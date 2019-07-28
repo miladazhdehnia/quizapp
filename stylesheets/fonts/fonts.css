@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Shabnam";
+    src: url('shabnam/Shabnam.eot');
+    src: url('shabnam/Shabnam.eot?#iefix') format('FontName-opentype'),
+         url('shabnam/Shabnam.woff') format('woff'),
+         url('shabnam/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Vazir";
+    src: url('vazir/Vazir.eot');
+    src: url('vazir/vazir.eot?#iefix') format('FontName-opentype'),
+         url('vazir/Vazir.woff') format('woff'),
+         url('vazir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* @font-face {
+    font-family: FontName;
+    src: url('FontName.eot');
+    src: url('FontName.eot?#iefix') format('FontName-opentype'),
+         url('FontName.woff') format('woff'),
+         url('FontName.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+        */

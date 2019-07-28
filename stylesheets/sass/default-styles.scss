@@ -1,0 +1,148 @@
+@import "_resets.scss";
+@import "_fantasy-colors.scss";
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+#restart {
+    display: none;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    p {
+        margin-top: 0.2rem;
+    }
+
+}
+.centerScreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.game {
+    height: 90%;
+    margin-top: 0.3rem;
+}
+
+#start {
+    @extend .centerScreen;
+
+    button {
+        color: white;
+        font-size: 2rem;
+        background-color: rgba(44, 130, 201, 1);
+    }
+}
+
+#notifation-bar {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: rgba(82, 179, 217, 0.6);
+    border-radius: 3px;
+
+    .fa-bars {
+        font-size: 2.5rem
+    }
+
+    .fa-bell {
+        margin-right: 1.5rem;
+    }
+}
+
+#quiz {
+    display: none;
+    // patop: 1rem;
+    height: 100%;
+
+    #question {
+        font-size: 1.5rem;
+        margin-top: 3.5rem;
+        padding: 0.8rem;
+        background-color: rgba(197, 239, 247, 0.8);
+        border-radius: 10px 10px
+    }
+}
+
+#score-container {
+    display: none;
+    @extend .centerScreen;
+}
+
+#choices {
+    padding: 1.7rem;
+
+    #choice1,
+    #choice2,
+    #choice3,
+    #choice4 {
+        background-color: rgba(197, 239, 247, 0.4);
+        margin-top: 0.4rem;
+        padding: 0.8rem;
+        border-radius: 10px 10px;
+
+        .click {
+            background-color: rgba(197, 239, 247, 1);
+        }
+    }
+}
+
+#progress {
+    margin-top: 1rem;
+    @extend .center;
+
+    // border: 1px black;
+    .prog {
+        display: inline-block;
+        margin: 2px;
+        width: 1.6rem;
+        height: 1.6rem;
+        border: 1px solid;
+        border-radius: 50% 50%;
+    }
+}
+
+
+#timer {
+    margin-top: 2rem;
+    @extend .center;
+    font-size: 1.5rem;
+
+    #bg-timegauge {
+        background-color: $galery;
+        height: 0.7rem;
+        width: 10rem;
+        @extend .center;
+
+    }
+
+    #timegauge {
+        background-image: radial-gradient(rgba(94, 237, 99, 1), rgb(86, 219, 91));
+        background-color: rgba(94, 237, 99, 1);
+        height: 0.7rem;
+    }
+}
+
+#bottom-menu {
+    color: whitesmoke;
+    background-color: rgba(82, 179, 217, 0.8);
+    border-radius: 3px;
+    bottom: 0;
+    position: absolute;
+    font-size: 2.5rem;
+
+    .fa {
+        position: relative;
+        top: 0.45rem;
+    }
+}

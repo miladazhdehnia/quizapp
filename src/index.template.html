@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="/stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/css/rtl-bs.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/css/default-styles.css">
+    <link rel="stylesheet" href="/stylesheets/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="notifation-bar">
+        <div class="row pt-2">
+            <div class="col-4"><i class="fa fa-bars"></i></div>
+            <div class="col-8 text-left"><i class="fa fa-coins"></i><i class="fa fa-bell"></i></div>
+        </div>
+    </div>
+    <div class="container-fluid game text-center">
+        <div class="" id="start">
+            <button class="btn">شروع</button>
+            <p class="pt-1">این یک نسخه mvp میباشد
+
+            </p>
+        </div>
+        <div id="quiz" class="container">
+            <div id="question">
+                <p>سوال</p>
+            </div>
+            <div id="timer">
+                <div id="counter"> 0 </div>
+                <div id="bg-timegauge">
+                    <div id="timegauge"></div>
+                </div>
+            </div>
+            <div id="choices">
+                <div id="choice1" class="click"></div>
+                <div id="choice2"></div>
+                <div id="choice3"></div>
+                <div id="choice4"></div>
+
+            </div>
+            <div id="progress"></div>
+        </div>
+    </div>
+    <div id="score-container" class="container-fluid text-center border">
+    </div>
+    <div class="text-center" id="restart" onclick="location.reload()"> 
+        <i class="fa fa-redo fa-2x btn btn-success"></i>
+          <p>دوباره تلاش کن</p>  
+    </div>
+    <div id="bottom-menu" class="container-fluid">
+        <div class="row text-center">
+            <div class="col-4">
+                <div id="invite"><i class="fa fa-share"></i></div>
+            </div>
+            <div class="col-4">
+                <div id="home"><i class="fa fa-gamepad"></i></div>
+            </div>
+            <div class="col-4">
+                <div id="score-board"><i class="fa fa-trophy"></i></div>
+            </div>
+        </div>
+    </div>
+
+<script type="module" src="./app.js"></script>
+</body>
+
+</html>

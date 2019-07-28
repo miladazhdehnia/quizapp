@@ -1,0 +1,172 @@
+/* Single property */
+@font-face {
+  font-family: "Shabnam";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/shabnam/Shabnam.eot?") format("eot"), url("../fonts/shabnam/Shabnam.woff2") format("woff2"), url("../fonts/shabnam/Shabnam.woff") format("woff"), url("../fonts/shabnam/Shabnam.ttf") format("truetype"), url('../fonts/shabnam/Shabnam.svg#str-replace(Shabnam, " ", "_")') format("svg");
+}
+@font-face {
+  font-family: "Vazir";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/vazir/Vazir.eot?") format("eot"), url("../fonts/vazir/Vazir.woff2") format("woff2"), url("../fonts/vazir/Vazir.woff") format("woff"), url("../fonts/vazir/Vazir.ttf") format("truetype"), url('../fonts/vazir/Vazir.svg#str-replace(Vazir, " ", "_")') format("svg");
+}
+body, html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+  font-family: shabnam;
+  direction: rtl;
+  text-align: rtl;
+  height: 100%;
+}
+@media (min-width: 320px) {
+  body, html {
+    font-size: calc(14px + 4 * (100vw - 320px) / 1046);
+  }
+}
+@media (min-width: 1366px) {
+  body, html {
+    font-size: 18px;
+  }
+}
+body a, html a {
+  color: inherit;
+}
+body a:hover, html a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  overflow: hidden;
+}
+
+.center, #timer #bg-timegauge, #timer, #progress {
+  margin: auto;
+  width: 50%;
+}
+
+#restart {
+  display: none;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+#restart p {
+  margin-top: 0.2rem;
+}
+
+.centerScreen, #score-container, #start {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.game {
+  height: 90%;
+  margin-top: 0.3rem;
+}
+
+#start button {
+  color: white;
+  font-size: 2rem;
+  background-color: #2c82c9;
+}
+
+#notifation-bar {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background-color: rgba(82, 179, 217, 0.6);
+  border-radius: 3px;
+}
+#notifation-bar .fa-bars {
+  font-size: 2.5rem;
+}
+#notifation-bar .fa-bell {
+  margin-right: 1.5rem;
+}
+
+#quiz {
+  display: none;
+  height: 100%;
+}
+#quiz #question {
+  font-size: 1.5rem;
+  margin-top: 3.5rem;
+  padding: 0.8rem;
+  background-color: rgba(197, 239, 247, 0.8);
+  border-radius: 10px 10px;
+}
+
+#score-container {
+  display: none;
+}
+
+#choices {
+  padding: 1.7rem;
+}
+#choices #choice1,
+#choices #choice2,
+#choices #choice3,
+#choices #choice4 {
+  background-color: rgba(197, 239, 247, 0.4);
+  margin-top: 0.4rem;
+  padding: 0.8rem;
+  border-radius: 10px 10px;
+}
+#choices #choice1 .click,
+#choices #choice2 .click,
+#choices #choice3 .click,
+#choices #choice4 .click {
+  background-color: #c5eff7;
+}
+
+#progress {
+  margin-top: 1rem;
+}
+#progress .prog {
+  display: inline-block;
+  margin: 2px;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid;
+  border-radius: 50% 50%;
+}
+
+#timer {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+#timer #bg-timegauge {
+  background-color: #eeeeee;
+  height: 0.7rem;
+  width: 10rem;
+}
+#timer #timegauge {
+  background-image: radial-gradient(#5eed63, #56db5b);
+  background-color: #5eed63;
+  height: 0.7rem;
+}
+
+#bottom-menu {
+  color: whitesmoke;
+  background-color: rgba(82, 179, 217, 0.8);
+  border-radius: 3px;
+  bottom: 0;
+  position: absolute;
+  font-size: 2.5rem;
+}
+#bottom-menu .fa {
+  position: relative;
+  top: 0.45rem;
+}
+
+/*# sourceMappingURL=default-styles.css.map */
